@@ -1,19 +1,21 @@
-# Penetration-Testing1
+# Penetration-Testing1 - SQL injection, XSS, CSRF
 
 과제1) 모든 취약점 찾기
-1. Quick Search창에서의 XSS 취약점
-<script>alert("xss")</script>를 대입하였을때 동작함.
+
+1. Quick Search창에서의 XSS 취약점 - <script>alert("xss")</script>를 대입하였을때 동작함.
+
 ![image](https://user-images.githubusercontent.com/82012857/176285510-f6908bb4-5a26-4577-a64b-77c077e90c5c.png)
 
-2. Board에서의 CSRF 취약점
-1번과 마찬가지로 HTML로 글 작성시 XSS에 반응하여 CSRF 취약점이 있다는 것을 알 수 있음.
+2. Board에서의 CSRF 취약점 - 1번과 마찬가지로 HTML로 글 작성시 XSS에 반응하여 CSRF 취약점이 있다는 것을 알 수 있음.
+
 ![image](https://user-images.githubusercontent.com/82012857/176285525-016dce9f-44fa-4034-bc10-b012649fceb3.png)
 
-3. 입력창에서의 SQL injection
-거의 모든 입력창에 대해서 비정상적인 SQL구문에 대해서 답을 함 
+3. 입력창에서의 SQL injection - 거의 모든 입력창에 대해서 비정상적인 SQL구문에 대해서 답을 함 
+
 ![image](https://user-images.githubusercontent.com/82012857/176285549-6b1343a9-c8ba-42c1-869b-b8a75733aae4.png)
 
 4. 쿠키값 탈취로 사용자 세션 하이재킹(?)
+
 ![image](https://user-images.githubusercontent.com/82012857/176285565-aaab7a95-8eba-4f7a-b0ce-372202f42513.png)
 
 과제2) information_schema.table를 활용해서 첫번째 테이블과 두번째 테이블 이름 찾기(검색이 필요)
