@@ -2,21 +2,26 @@
 
 ### XSS
 1. Quick Search 입력창에 <script>alert("xss")</script>
+
 ![image](https://user-images.githubusercontent.com/82012857/176285803-79bdef8f-342d-40e9-8d71-d057434fc1d6.png)
 
 
 2. 게시판에 HTML로 <script>alert(document.cookie)</script>
+
 ![image](https://user-images.githubusercontent.com/82012857/176285816-a06795fa-2c6f-493d-84bb-dfa9f91eca7d.png)
 
 3. 아이디 중복확인의 URI에서 id값을 <script>alert("xss")</script>로 대치함
+
 ![image](https://user-images.githubusercontent.com/82012857/176285835-ebdf1ca5-a36f-4333-bdaa-61814d011795.png)
 ![image](https://user-images.githubusercontent.com/82012857/176285846-af12d59e-8331-4e29-ab7e-ff1c3668f403.png)
 
 4. Advances Search의 검색어 Best10에 들어가서 URI부분에 http://61.39.155.24:50003/demoshop/shop/shop_searchresult.asp?frmSearchWord= 의 파라미터를 <script>alert("xss")</script>로 대치함
+
 ![image](https://user-images.githubusercontent.com/82012857/176285862-e6d4d8fb-487e-41d2-a295-cedf6f537ba8.png)
 ![image](https://user-images.githubusercontent.com/82012857/176285890-f1d80d40-cbec-4cad-9097-31ab7f494afc.png)
 
 5. Keyword를 Search하는데 프록시를 켜고 Burp Suite 툴을 통해서 전송 값을 인터셉트하고 s_brand의 값을 BeneFit에서 <script>alert("xss")</script>로 대치하여 Forward
+
 ![image](https://user-images.githubusercontent.com/82012857/176285966-4f6da73a-69f2-4fd5-9717-af2e4068e242.png)
 ![image](https://user-images.githubusercontent.com/82012857/176285977-91ee3bee-f6e5-4d4c-88b0-06692f8cae02.png)
 ![image](https://user-images.githubusercontent.com/82012857/176285983-327fde04-1f58-43fb-a9b5-57c6a21e5e1c.png)
